@@ -1,0 +1,39 @@
+
+*{
+	margin:0;
+}
+.tabla {    /* div de clase "tabla" */
+		background-color:grey; /* color de fondo */
+		display:flex;	/* mostrar segun el centrado */
+		justify-content: center; /* opcion ver centrado */
+		width: 100%;   /* ancho */ 
+		height:200%;  /* alto */
+		padding: 20px; /* margen interno */
+		align-items: center;
+}
+table {
+		border: white 1px solid; /* borde color + ancho + tipo */
+	/* background-color:#90EE90; */
+}
+tr { /* linea del renglon de la tabla */
+		border: white 1px solid;
+		background-color:#90EE90; 
+}
+td {
+	/* background-color:#187D11; */
+
+	color: black;				/* color de la letra -*/
+}
+.blanco{
+		color: white;
+}
+.amarillo{
+	color:yellow;
+}
+.stock{
+	text-align:right;
+	width:80px;
+}
+
+
+

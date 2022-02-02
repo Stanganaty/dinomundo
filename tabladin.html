@@ -1,0 +1,119 @@
+<!DOCTYPE html>  
+<html lang="es">
+	<head>
+		<title>Tabla con CSS</title>
+		<meta charset="UTF-8">
+		 <div align="center"><font color="#1A1A1A" size="+1"><marquee bgcolor="#BFBFBF" direction="right" loop="20">Participá de nuestra comunidad, dejanos tus datos para contactarnos</marquee></font></div>
+     <link rel="stylesheet" href="tablacdin.css">
+    <script>
+         
+        function nuevodato(){
+        var datos=={
+            "nombre y apellido": document.getElementById("nombre y apellido").value,
+            "correo":document.getElementById("correo").value,
+            "edad":document.getElementById("edad").value
+        };
+        fetch ('http://localhost:3306/nuevo',
+        {method:'post',
+	    headers: {
+                 'Content-Tipe':'aplication/json'
+		},
+		 body:JSON:stringify(datos),
+	    } );
+	    };
+	     
+    </script>
+    </head>
+   <body> 
+ 
+<div class="tabla"> 
+	<table>
+	<tr> 
+		<td></td>
+
+	<tr> 
+		<td></td>			
+		<td>nombre y apellido:</td>
+		<td> <input type="text" /> </td>			
+					
+	</tr>
+	<tr> 
+		<td></td>
+		<td>correo:</td>			
+		<td> <input type="text" /> </td>
+			<tr> 
+		<td></td>
+		<td>edad:</td>			
+		<td> <input type="text" /> </td>	
+	</tr>			
+	</table>
+<form method="get" action="http://aprenderprogramar.com/accion.php">
+<input type= "submit" value="Enviar"/>
+</form>
+
+</body>
+	<img src="C:\Users\natalia\Desktop\Proyecto tic\Dino2.png" style="width:800px"> <div style="color:#FFFFFF";"background-color:grey"</div style>
+
+
+</html>
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
