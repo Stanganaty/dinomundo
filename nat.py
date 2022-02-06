@@ -22,7 +22,7 @@ def nuevo():
     correo = request_data ['correo']
     edad =request_data ['edad']
     cur= mysql.connection.cursor ()
-    cur.execute ('INSERT INTO mensajes (nombre y apellido, correo, edad) VALUES (%s,%s,&s)
+    cur.execute ('INSERT INTO mensajes (nombre y apellido, correo, edad) VALUES ($s,$s,$s)
     mysql.connection.commit
     return "GUARDADO OK"
     
