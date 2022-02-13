@@ -1,156 +1,84 @@
 <!DOCTYPE html>  
 <html lang="es">
 	<head>
-		<title>Tabla con CSS</title>
+		<title>Registro usuario</title>
 		<meta charset="UTF-8">
-		 <div align="center"><font color="#1A1A1A" size="+1"><marquee bgcolor="#BFBFBF" direction="right" loop="20">Participá de nuestra comunidad, dejanos tus datos para contactarnos</marquee></font></div>
-        <link rel="stylesheet" href="tablacdin.css">
-	<?php
+     <link rel="stylesheet" href="tablacdin.css">
+ <?php
 
-                $conex = mysqli_connect("localhost","root","formulst"); 
+$conex = mysqli_connect("localhost","root","formulst"); 
 
-       ?> 
-    <script>
-         
-        function nuevodato(){
-        var datos=={
-            "nombre y apellido": document.getElementById("nombre y apellido").value,
-            "correo":document.getElementById("correo").value,
-            "edad":document.getElementById("edad").value
-        };
-        fetch ('http://localhost:3306/nuevo',
-        {method:'post',
-	    headers: {
-                 'Content-Tipe':'aplication/json'
-		},
-		 body:JSON:stringify(datos),
-	    } );
-	    };
-	     from flask import Flask, request, jsonify
-from flask_mysqldb import MYSQL
-from flask import jsonify
-from flask_cors import CORS, cross_origin
-
-app= Flask(_name_)
-
-cors= CORS(app,resources={r"/*": {"origins": "*"}})
-
-app.confing ['MYSQL_HOST']='localhost'
-app.confing ['MYSQL_USER']= 'root'
-app.confing ['MYSQL_PASSWORD']= 'fullstack'
-app.confing  ['MYSQL_DB']= 'contactost'
-mysql= MYSQL(app)
-
-@app.route('nuevo'methods== ['POST'])
-@cross_origin():
-def nuevo():
-	if request.methods== 'POST':
-	request_data= request.get_json()
-    nombre y apellido = request_data ['nombre y apellido']
-    correo = request_data ['correo']
-    edad =request_data ['edad']
-    cur= mysql.connection.cursor ()
-    cur.execute ('INSERT INTO mensajes (nombre y apellido, correo, edad) VALUES ($s,$s,$s)
-    mysql.connection.commit
-    return "GUARDADO OK"
-    
-    
-    
- if_name_== '_main_':
-	 app.run (host='0.0.0.0',port= 4003
-
-    </script>
-    </head>
-   <body> 
- 
-<div class="tabla"> 
-	<table>
-	<tr> 
-		<td></td>
-
-	<tr> 
-		<td></td>			
-		<td>nombre y apellido:</td>
-		<td> <input type="text" /> </td>			
-					
-	</tr>
-	<tr> 
-		<td></td>
-		<td>correo:</td>			
-		<td> <input type="text" /> </td>
-			<tr> 
-		<td></td>
-		<td>edad:</td>			
-		<td> <input type="text" /> </td>	
-	</tr>			
-	</table>
-<form method="post" action="http://cursophp.com.ar/phpmyadmin/sql.php?server=1&db=formulst&table=contactost&pos=0&token=c9bfc6d38d1ea51c19502a6dc165e358">
-<input type= "submit" value="Enviar"/>
-</form>
-
-</body>
-	<img src="./dinodos.png" style="width:800px""hight=800"> <div style="color:#FFFFFF";"background-color:grey"</div style>
-
-
-</html>
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	</div>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+?> 
+  <header style="background-color:#7F7F7F">
+		
+</head>
+	<body>
+	<nav>
+		
+    <div align="center"><font color= "#7F7F7F" size="+3"><marquee bgcolor="#BFBFBF" direction="right" loop="20">dejanos tus datos</marquee></font></div>
+ </div>
+	</nav>
+	</body>
+<body>    
+      <form method= "post">
+      <input type="text" name= "name" placeholder="Nombre y Apellido">
+      <input type="text"name= "edad" placeholder="edad">
+      <input type= "email" name= "email"placeholder="correo electronico">
+      <input type= "submit" name= "register">
+      </form>
+      <?php
+      include=("registrar.php");
+      ?>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <p align ="center"><img src= "./dinodos.png" style="width:800" "hight=800"><div style= color:"#7F7F7F";background-color:"#7F7F7F"</div style> </p> 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+  
+     
+      </body>
+      </html>
+      
 
 
 
