@@ -1,5 +1,5 @@
 <?php
 
-$conex = mysqli_connect("localhost","root","formulst"); 
+$conex = mysqli_connect("localhost","root","","stang"); 
 
 ?> 
